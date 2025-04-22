@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil's Rooms - Spel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!--link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Creepster&display=swap" rel="stylesheet"-->
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Devil's Rooms Logo" style="height: 70px;">
+            </div>
+            <button class="mobile-menu-btn" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="pages/about.html">Om Spelet</a></li>
+                    <li><a href="pages/how-to-play.html">Spelguide</a></li>
+                    <li><a href="pages/gallery.html">Galleri</a></li>
+                    <li><a href="pages/highscores.html">Highscores</a></li>
+                    <li><a href="pages/credits.html">Credits</a></li>
+                    <li><a href="pages/login.html">Logga In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Välkommen till Devil's Rooms</h1>
+            <p>Ett spännande äventyrsspel där du utforskar mystiska rum och övervinner utmaningar</p>
+            <a href="pages/play.html" class="cta-button">Spela Nu</a>
+        </section>
+
+        <section class="features">
+            <h2>Spelfunktioner</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Utforska</h3>
+                    <p>Upptäck hemliga rum och gångar</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Utmana</h3>
+                    <p>Övervinna svåra pussel och hinder</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Samla</h3>
+                    <p>Hitta dolda föremål och skatter</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
+                <a href="pages/contact.html">Kontakt</a>
+                <a href="pages/privacy.html">Integritetspolicy</a>
+                <button onclick="logout()" class="cta-button">Logga Ut</button>
+            </div>
+            <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function logout() {
+            document.cookie.split(";").forEach((c) => {
+                document.cookie = c
+                    .replace(/^ +/, "")
+                    .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+            });
+            alert('Du har loggats ut.');
+        }
+    </script>
+</body>
+</html> 
