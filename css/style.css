@@ -124,7 +124,9 @@ main {
 }
 
 .hero {
-    height: 100vh;
+    width: 100%;
+    max-width: var(--max-width);
+    height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -133,7 +135,10 @@ main {
     justify-content: center;
     text-align: center;
     color: #fff;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
 .hero h1 {
