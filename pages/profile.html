@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Profil - Devil's Rooms</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Devil's Rooms Logo" style="height: 70px;">
+            </div>
+            <button class="mobile-menu-btn" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Hem</a></li>
+                    <li><a href="about.html">Om Spelet</a></li>
+                    <li><a href="how-to-play.html">Spelguide</a></li>
+                    <li><a href="gallery.html">Galleri</a></li>
+                    <li><a href="highscores.html">Highscores</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                    <li><a href="login.html">Logga In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <div class="profile-container">
+                <h2>Min Profil</h2>
+                
+                <div class="profile-info">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <img src="../images/default-avatar.png" alt="Profilbild" id="profile-avatar">
+                            <div class="avatar-upload">
+                                <label for="avatar-input" class="avatar-upload-btn">Ändra Bild</label>
+                                <input type="file" id="avatar-input" accept="image/*" hidden>
+                                <button type="button" class="avatar-remove-btn" id="remove-avatar">Ta Bort Bild</button>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <h3 id="profile-username">Användarnamn</h3>
+                            <p id="profile-email">email@example.com</p>
+                            <p class="member-since">Medlem sedan: <span id="member-since">2025</span></p>
+                        </div>
+                    </div>
+
+                    <div class="profile-stats">
+                        <h3>Spelstatistik</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h4>Högsta Poäng</h4>
+                                <p id="highest-score">0</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>Totala Spel</h4>
+                                <p id="total-games">0</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>Genomsnittlig Tid</h4>
+                                <p id="average-time">0 min</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>Achievements</h4>
+                                <p id="achievements">0/10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-settings">
+                        <h3>Inställningar</h3>
+                        <form id="settings-form" class="settings-form">
+                            <div class="form-group">
+                                <label for="update-username">Uppdatera Användarnamn</label>
+                                <input type="text" id="update-username" name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="update-email">Uppdatera E-post</label>
+                                <input type="email" id="update-email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="update-password">Nytt Lösenord</label>
+                                <input type="password" id="update-password" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Bekräfta Nytt Lösenord</label>
+                                <input type="password" id="confirm-password" name="confirm-password">
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="notifications" id="notifications">
+                                    Aktivera Notifikationer
+                                </label>
+                            </div>
+                            <button type="submit" class="auth-button">Spara Ändringar</button>
+                        </form>
+                    </div>
+
+                    <div class="profile-actions">
+                        <button class="logout-button" onclick="logout()">Logga Ut</button>
+                    </div>
+
+                    <div class="danger-zone">
+                        <h3>Farlig Zon</h3>
+                        <button class="delete-account-btn" onclick="confirmDeleteAccount()">Radera Konto</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="privacy.html">Integritetspolicy</a>
+            </div>
+            <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html> 
