@@ -125,7 +125,7 @@ main {
 
 .hero {
     width: 100%;
-    max-width: var(--max-width);
+    max-width: 800px;
     height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
     background-size: cover;
@@ -669,7 +669,7 @@ body.menu-open {
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     border: 1px solid rgba(255, 68, 68, 0.2);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Creepster', cursive;
     font-size: 1rem;
 }
 
