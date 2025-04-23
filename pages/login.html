@@ -1,121 +1,151 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logga In - Devil's Rooms</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Creepster&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <img src="../images/logo.png" alt="Devil's Rooms Logo" style="height: 70px;">
-            </div>
-            <button class="mobile-menu-btn" aria-label="Öppna meny">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Hem</a></li>
-                    <li><a href="about.html">Om Spelet</a></li>
-                    <li><a href="how-to-play.html">Spelguide</a></li>
-                    <li><a href="gallery.html">Galleri</a></li>
-                    <li><a href="highscores.html">Highscores</a></li>
-                    <li><a href="credits.html">Credits</a></li>
-                    <li><a href="login.html">Logga In</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt="Devil's Rooms Logo"
+            style="height: 70px"
+          />
+        </div>
+        <button class="mobile-menu-btn" aria-label="Öppna meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Hem</a></li>
+            <li><a href="about.html">Om Spelet</a></li>
+            <li><a href="how-to-play.html">Spelguide</a></li>
+            <li><a href="gallery.html">Galleri</a></li>
+            <li><a href="highscores.html">Highscores</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="login.html">Logga In</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="auth-section">
-            <div class="auth-container">
-                <div class="auth-tabs">
-                    <button class="auth-tab active" data-tab="login">Logga In</button>
-                    <button class="auth-tab" data-tab="register">Registrera</button>
-                </div>
+      <section class="auth-section">
+        <div class="auth-container">
+          <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="login">Logga In</button>
+            <button class="auth-tab" data-tab="register">Registrera</button>
+          </div>
 
-                <div class="auth-forms">
-                    <!-- Login Form -->
-                    <form id="login-form" class="auth-form active">
-                        <h2>Logga In</h2>
-                        <div class="form-group">
-                            <label for="login-email">E-post</label>
-                            <input type="email" id="login-email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="login-password">Lösenord</label>
-                            <input type="password" id="login-password" name="password" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="remember"> Kom ihåg mig
-                            </label>
-                        </div>
-                        <button type="submit" class="auth-button">Logga In</button>
-                        <a href="#" class="forgot-password">Glömt lösenord?</a>
-                    </form>
+          <div class="auth-forms">
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active">
+              <h2>Logga In</h2>
+              <div class="form-group">
+                <label for="login-email">E-post</label>
+                <input type="email" id="login-email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="login-password">Lösenord</label>
+                <input
+                  type="password"
+                  id="login-password"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="remember" /> Kom ihåg mig
+                </label>
+              </div>
+              <button type="submit" class="auth-button">Logga In</button>
+              <a href="#" class="forgot-password">Glömt lösenord?</a>
+            </form>
 
-                    <!-- Registration Form -->
-                    <form id="register-form" class="auth-form">
-                        <h2>Registrera</h2>
-                        <div class="form-group">
-                            <label for="register-username">Användarnamn</label>
-                            <input type="text" id="register-username" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="register-email">E-post</label>
-                            <input type="email" id="register-email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="register-password">Lösenord</label>
-                            <input type="password" id="register-password" name="password" required 
-                                pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{12,})"
-                                title="Lösenordet måste vara minst 12 tecken långt och innehålla minst en stor bokstav, en siffra och en symbol">
-                            <div class="password-requirements">
-                                <ul>
-                                    <li id="length">Minst 12 tecken</li>
-                                    <li id="symbol">Minst 1 symbol (!@#$%^&*)</li>
-                                    <li id="number">Minst 1 siffra</li>
-                                    <li id="capital">Minst 1 stor bokstav</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="register-confirm-password">Bekräfta Lösenord</label>
-                            <input type="password" id="register-confirm-password" name="confirm-password" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="terms" required> Jag accepterar användarvillkoren
-                            </label>
-                        </div>
-                        <button type="submit" class="auth-button">Registrera</button>
-                    </form>
+            <!-- Registration Form -->
+            <form id="register-form" class="auth-form">
+              <h2>Registrera</h2>
+              <div class="form-group">
+                <label for="register-username">Användarnamn</label>
+                <input
+                  type="text"
+                  id="register-username"
+                  name="username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="register-email">E-post</label>
+                <input type="email" id="register-email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="register-password">Lösenord</label>
+                <input
+                  type="password"
+                  id="register-password"
+                  name="password"
+                  required
+                  pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{12,})"
+                  title="Lösenordet måste vara minst 12 tecken långt och innehålla minst en stor bokstav, en siffra och en symbol"
+                />
+                <div class="password-requirements">
+                  <ul>
+                    <li id="length">Minst 12 tecken</li>
+                    <li id="symbol">Minst 1 symbol (!@#$%^&*)</li>
+                    <li id="number">Minst 1 siffra</li>
+                    <li id="capital">Minst 1 stor bokstav</li>
+                  </ul>
                 </div>
-            </div>
-        </section>
+              </div>
+              <div class="form-group">
+                <label for="register-confirm-password">Bekräfta Lösenord</label>
+                <input
+                  type="password"
+                  id="register-confirm-password"
+                  name="confirm-password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="terms" required /> Jag accepterar
+                  användarvillkoren
+                </label>
+              </div>
+              <button type="submit" class="auth-button">Registrera</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
-                <a href="contact.html">Kontakt</a>
-                <a href="privacy.html">Integritetspolicy</a>
-            </div>
-            <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="privacy.html">Integritetspolicy</a>
         </div>
+        <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      </div>
     </footer>
 
     <script src="../js/main.js"></script>
     <script src="../js/auth.js"></script>
-</body>
-</html> 
+  </body>
+</html>

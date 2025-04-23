@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Highscores - Devil's Rooms</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Creepster&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <img src="../images/logo.png" alt="Devil's Rooms Logo" style="height: 70px;">
-            </div>
-            <button class="mobile-menu-btn" aria-label="Öppna meny">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Hem</a></li>
-                    <li><a href="about.html">Om Spelet</a></li>
-                    <li><a href="how-to-play.html">Spelguide</a></li>
-                    <li><a href="gallery.html">Galleri</a></li>
-                    <li><a href="highscores.html">Highscores</a></li>
-                    <li><a href="credits.html">Credits</a></li>
-                    <li><a href="login.html">Logga In</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt="Devil's Rooms Logo"
+            style="height: 70px"
+          />
+        </div>
+        <button class="mobile-menu-btn" aria-label="Öppna meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Hem</a></li>
+            <li><a href="about.html">Om Spelet</a></li>
+            <li><a href="how-to-play.html">Spelguide</a></li>
+            <li><a href="gallery.html">Galleri</a></li>
+            <li><a href="highscores.html">Highscores</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="login.html">Logga In</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="highscores-section">
-            <h2>Highscores</h2>
-            
-            <div class="highscores-filters">
-                <button class="filter-btn active" data-filter="allTime">Alla Tider</button>
-                <button class="filter-btn" data-filter="weekly">Denna Vecka</button>
-                <button class="filter-btn" data-filter="monthly">Denna Månad</button>
-            </div>
+      <section class="highscores-section">
+        <h2>Highscores</h2>
 
-            <div class="highscores-table-container">
-                <table class="highscores-table">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Spelare</th>
-                            <th>Poäng</th>
-                            <th>Tid</th>
-                            <th>Datum</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Highscores will be loaded here dynamically -->
-                    </tbody>
-                </table>
-            </div>
+        <div class="highscores-filters">
+          <button class="filter-btn active" data-filter="allTime">
+            Alla Tider
+          </button>
+          <button class="filter-btn" data-filter="weekly">Denna Vecka</button>
+          <button class="filter-btn" data-filter="monthly">Denna Månad</button>
+        </div>
 
-            <div class="highscores-info">
-                <h3>Hur fungerar poängsystemet?</h3>
-                <ul>
-                    <li>Poäng baseras på tid, samlade föremål och överlevnad</li>
-                    <li>Bonuspoäng för att klara rum utan att dö</li>
-                    <li>Extra poäng för att hitta hemliga rum</li>
-                </ul>
-            </div>
-        </section>
+        <div class="highscores-table-container">
+          <table class="highscores-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Spelare</th>
+                <th>Poäng</th>
+                <th>Tid</th>
+                <th>Datum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Highscores will be loaded here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="highscores-info">
+          <h3>Hur fungerar poängsystemet?</h3>
+          <ul>
+            <li>Poäng baseras på tid, samlade föremål och överlevnad</li>
+            <li>Bonuspoäng för att klara rum utan att dö</li>
+            <li>Extra poäng för att hitta hemliga rum</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
-                <a href="contact.html">Kontakt</a>
-                <a href="privacy.html">Integritetspolicy</a>
-            </div>
-            <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="privacy.html">Integritetspolicy</a>
         </div>
+        <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      </div>
     </footer>
 
     <script src="../js/main.js"></script>
     <script src="../js/highscores.js"></script>
-</body>
-</html> 
+  </body>
+</html>
