@@ -14,6 +14,27 @@
     --background-opacity: 0.95;
 }
 
+.winky-rough-title {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.winky-rough-subtitle {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.winky-rough-text {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +42,7 @@
 }
 
 body {
-    font-family: 'Creepster', cursive;
+    font-family: 'Winky Rough', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -33,7 +54,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Creepster', cursive;
+    font-family: 'Winky Rough', sans-serif;
     margin-bottom: 1rem;
     color: #ff4444;
 }
@@ -669,7 +690,7 @@ body.menu-open {
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     border: 1px solid rgba(255, 68, 68, 0.2);
-    font-family: 'Creepster', cursive;
+    font-family: 'Winky Rough', sans-serif;
     font-size: 1rem;
 }
 
@@ -940,7 +961,7 @@ body.menu-open {
     border-collapse: collapse;
     margin: 0 auto;
     background: transparent;
-    font-family: 'Creepster', cursive;
+    font-family: 'Winky Rough', sans-serif;
 }
 
 .highscores-table th {
@@ -1012,7 +1033,7 @@ body.menu-open {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Creepster', cursive;
+    font-family: 'Winky Rough', sans-serif;
     font-size: 1.2rem;
 }
 
