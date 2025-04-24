@@ -1771,3 +1771,247 @@ ul, ol {
         max-width: 100%;
     }
 }
+
+/* Play Page Styles */
+.play-page {
+    padding: var(--section-padding);
+    max-width: var(--max-width);
+    margin: var(--section-margin);
+}
+
+.play-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+
+/* Game Section */
+.game-section {
+    margin-bottom: 3rem;
+}
+
+.webgl-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
+}
+
+.webgl-card h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.webgl-card p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#webgl-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+#game-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.webgl-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.play-button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Winky Rough', sans-serif;
+}
+
+.play-button:hover {
+    background: #8b0000;
+}
+
+.game-instructions {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 400px;
+}
+
+.game-instructions p {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.game-instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.game-instructions ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+/* Download Section */
+.download-section {
+    margin-bottom: 3rem;
+}
+
+.download-section h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.download-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+.download-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.download-card p {
+    margin-bottom: 1.5rem;
+}
+
+.download-button {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.download-button:hover {
+    background: #8b0000;
+}
+
+/* Game Tips Section */
+.game-tips {
+    margin-bottom: 3rem;
+}
+
+.game-tips h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tip-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tip-card ul li {
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.tip-card ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0.8rem;
+    color: var(--accent-color);
+}
+
+/* Responsive Design for Play Page */
+@media (max-width: 768px) {
+    .play-page {
+        padding: 1rem;
+    }
+    
+    #webgl-container {
+        height: 350px;
+    }
+    
+    .download-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-card {
+        max-width: 100%;
+    }
+    
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+}
