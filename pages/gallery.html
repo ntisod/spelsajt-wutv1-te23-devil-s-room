@@ -1,108 +1,142 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galleri - Devil's Rooms</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
+=======
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+>>>>>>> c8fb1cffb9cbc91dce57bcec7cadc06f5eecf3d9
     <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <img src="../images/logo.png" alt="Devil's Rooms Logo" style="height: 70px;">
-            </div>
-            <button class="mobile-menu-btn" aria-label="Öppna meny">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Hem</a></li>
-                    <li><a href="about.html">Om Spelet</a></li>
-                    <li><a href="how-to-play.html">Spelguide</a></li>
-                    <li><a href="gallery.html">Galleri</a></li>
-                    <li><a href="highscores.html">Highscores</a></li>
-                    <li><a href="credits.html">Credits</a></li>
-                    <li><a href="login.html">Logga In</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt="Devil's Rooms Logo"
+            style="height: 70px"
+          />
+        </div>
+        <button class="mobile-menu-btn" aria-label="Öppna meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Hem</a></li>
+            <li><a href="about.html">Om Spelet</a></li>
+            <li><a href="how-to-play.html">Spelguide</a></li>
+            <li><a href="gallery.html">Galleri</a></li>
+            <li><a href="highscores.html">Highscores</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="login.html">Logga In</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="gallery-section">
-            <h2>Spelgalleri</h2>
-            
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">Alla</button>
-                <button class="filter-btn" data-filter="screenshots">Screenshots</button>
-                <button class="filter-btn" data-filter="videos">Videor</button>
-                <button class="filter-btn" data-filter="artwork">Konstverk</button>
+      <section class="gallery-section">
+        <h2>Spelgalleri</h2>
+
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Alla</button>
+          <button class="filter-btn" data-filter="screenshots">
+            Screenshots
+          </button>
+          <button class="filter-btn" data-filter="videos">Videor</button>
+          <button class="filter-btn" data-filter="artwork">Konstverk</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="screenshots">
+            <img
+              src="../images/screenshot1.jpg"
+              alt="Screenshot från spelet - Mystiskt rum"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <h3>Mystiskt Rum</h3>
+              <p>Det första rummet spelaren möter</p>
             </div>
+          </div>
 
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="screenshots">
-                    <img src="../images/screenshot1.jpg" alt="Screenshot från spelet - Mystiskt rum" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h3>Mystiskt Rum</h3>
-                        <p>Det första rummet spelaren möter</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="screenshots">
-                    <img src="../images/screenshot2.jpg" alt="Screenshot från spelet - Pussel" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h3>Utmanande Pussel</h3>
-                        <p>Ett av de svårare pusslen i spelet</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="videos">
-                    <div class="video-thumbnail">
-                        <img src="../images/video-thumb1.jpg" alt="Video thumbnail - Spelguide" class="gallery-image">
-                        <div class="play-button">▶</div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Spelguide</h3>
-                        <p>Lär dig grunderna i spelet</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="artwork">
-                    <img src="../images/artwork1.jpg" alt="Konstverk - Karaktärsdesign" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h3>Karaktärsdesign</h3>
-                        <p>Konceptkonst för huvudkaraktären</p>
-                    </div>
-                </div>
+          <div class="gallery-item" data-category="screenshots">
+            <img
+              src="../images/screenshot2.jpg"
+              alt="Screenshot från spelet - Pussel"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <h3>Utmanande Pussel</h3>
+              <p>Ett av de svårare pusslen i spelet</p>
             </div>
+          </div>
 
-            <!-- Lightbox for images -->
-            <div class="lightbox" id="lightbox">
-                <span class="close-lightbox">&times;</span>
-                <img class="lightbox-content" id="lightbox-img">
-                <div class="lightbox-caption"></div>
+          <div class="gallery-item" data-category="videos">
+            <div class="video-thumbnail">
+              <img
+                src="../images/video-thumb1.jpg"
+                alt="Video thumbnail - Spelguide"
+                class="gallery-image"
+              />
+              <div class="play-button">▶</div>
             </div>
-        </section>
+            <div class="gallery-overlay">
+              <h3>Spelguide</h3>
+              <p>Lär dig grunderna i spelet</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="artwork">
+            <img
+              src="../images/artwork1.jpg"
+              alt="Konstverk - Karaktärsdesign"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <h3>Karaktärsdesign</h3>
+              <p>Konceptkonst för huvudkaraktären</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox for images -->
+        <div class="lightbox" id="lightbox">
+          <span class="close-lightbox">&times;</span>
+          <img class="lightbox-content" id="lightbox-img" />
+          <div class="lightbox-caption"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
-                <a href="contact.html">Kontakt</a>
-                <a href="privacy.html">Integritetspolicy</a>
-            </div>
-            <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="privacy.html">Integritetspolicy</a>
         </div>
+        <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      </div>
     </footer>
 
     <script src="../js/main.js"></script>
     <script src="../js/gallery.js"></script>
-</body>
-</html> 
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spela - Devil's Rooms</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="../images/logo.png"
+            alt="Devil's Rooms Logo"
+            style="height: 70px"
+          />
+        </div>
+        <button class="mobile-menu-btn" aria-label="Öppna meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Hem</a></li>
+            <li><a href="about.html">Om Spelet</a></li>
+            <li><a href="how-to-play.html">Spelguide</a></li>
+            <li><a href="gallery.html">Galleri</a></li>
+            <li><a href="highscores.html">Highscores</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="login.html">Logga In</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="play-section">
+        <h1>Spela Devil's Rooms</h1>
+      
+        <div class="game-section">
+          <div class="webgl-card">
+            <h2>WebGL Version</h2>
+            <p>Spela direkt i webbläsaren med WebGL</p>
+            <div id="webgl-container">
+              <canvas id="game-canvas"></canvas>
+              <div class="webgl-controls">
+                <button id="start-game" class="play-button">Starta Spel</button>
+                <div class="game-instructions">
+                  <p>Kontroller:</p>
+                  <ul>
+                    <li>WASD - Rörelse</li>
+                    <li>Musklick - Interagera</li>
+                    <li>ESC - Pausmeny</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h2>Ladda Ner Spelet</h2>
+          <div class="download-options">
+            <div class="download-card">
+              <h3>Windows Version</h3>
+              <p>Ladda ner för Windows PC</p>
+              <a href="../downloads/devils-rooms-windows.zip" class="download-button">Ladda ner Windows</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-tips">
+          <h2>Speltips</h2>
+          <div class="tips-container">
+            <div class="tip-card">
+              <h3>För Nybörjare</h3>
+              <ul>
+                <li>Utforska varje rum noggrant för att hitta ledtrådar</li>
+                <li>Samla alla föremål du hittar - de kan vara användbara senare</li>
+                <li>Notera alla symboler och mönster du ser</li>
+              </ul>
+            </div>
+            <div class="tip-card">
+              <h3>För Erfarna Spelare</h3>
+              <ul>
+                <li>Försök lösa pusslen utan ledtrådar</li>
+                <li>Utmana dig själv att hitta alla hemliga rum</li>
+                <li>Försök slutföra spelet på kortast möjliga tid</li>
+              </ul>
+            </div>
+            <div class="tip-card">
+              <h3>Allmänna Tips</h3>
+              <ul>
+                <li>Använd ESC för att pausa spelet när som helst</li>
+                <li>Spara ditt framsteg regelbundet</li>
+                <li>Om du fastnar, prova att titta på saker från olika vinklar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="privacy.html">Integritetspolicy</a>
+        </div>
+        <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/webgl-game.js"></script>
+  </body>
+</html> 
