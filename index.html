@@ -54,8 +54,8 @@
       <section class="hero">
         <h1>Välkommen till Devil's Rooms</h1>
         <p>
-          Ett spännande äventyrsspel där du utforskar mystiska rum och
-          övervinner utmaningar
+          Ett spännande esacpe room-spel där du utforskar mystiska rum och lösa olika pussel
+          för att fly.
         </p>
         <a href="pages/play.html" class="cta-button">Spela Nu</a>
       </section>
@@ -85,25 +85,11 @@
           <a href="https://www.ntigymnasiet.se/">NTI Gymnasiet</a>
           <a href="pages/contact.html">Kontakt</a>
           <a href="pages/privacy.html">Integritetspolicy</a>
-          <button onclick="logout()" class="cta-button">Logga Ut</button>
         </div>
         <p>&copy; 2025 Devil's Rooms. Alla rättigheter förbehållna.</p>
       </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-      function logout() {
-        document.cookie.split(";").forEach((c) => {
-          document.cookie = c
-            .replace(/^ +/, "")
-            .replace(
-              /=.*/,
-              "=;expires=" + new Date().toUTCString() + ";path=/"
-            );
-        });
-        alert("Du har loggats ut.");
-      }
-    </script>
   </body>
 </html>
